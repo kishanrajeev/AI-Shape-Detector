@@ -29,8 +29,11 @@ x_test = x_test.astype("float32") / 255.0
 model = keras.Sequential([
     layers.Conv2D(32, (3, 3), activation="relu", input_shape=(32, 32, 3)),
     layers.MaxPooling2D((2, 2)),
-    ModuleWrapper(layers.Conv2D(64, (3, 3), activation="relu")),
-    ModuleWrapper(layers.Conv2D(64, (3, 3), activation="relu")),
+    # Add a convolutional neural network layer to detect shapes
+    layers.Conv2D(64, (3, 3), activation="relu",
+                   kernel_initializer="he_normal",
+                   kernel_regularizer=tf.keras.regularizers.l2(0.00001)),
+    layers.MaxPooling2D((2, 2)),
     layers.Flatten(),
     layers.Dense(64, activation="relu"),
     layers.Dense(10),
