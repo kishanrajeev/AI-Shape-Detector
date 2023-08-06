@@ -1,7 +1,7 @@
 import tensorflow as tf
+from keras.datasets import cifar10
 from tensorflow import keras
 from tensorflow.python.keras import layers
-from tensorflow.python.keras.datasets import cifar10
 
 
 # Load and normalize dataset

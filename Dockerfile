@@ -1,4 +1,5 @@
 FROM tensorflow/tensorflow:latest
 
-RUN pip install keras
-RUN pip install datasets
+RUN pip install keras==2.7.0
+RUN pip install tensorflow
+RUN pip install tensorflow-datasets
