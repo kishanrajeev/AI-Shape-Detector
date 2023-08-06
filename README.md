@@ -1,5 +1,5 @@
 # AI Shape Detector
-An AI shape detector trained by ROCm.
+An AI shape detector trained using ROCm and TensorFlow.
 
 
 ## Contact
