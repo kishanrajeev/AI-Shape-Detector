@@ -55,4 +55,4 @@ for layer in model.layers:
         layer.module = module
 
 # Save the model
-model.save(save_path)
+model.save(save_path, save_format='h5')
