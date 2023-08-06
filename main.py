@@ -1,8 +1,8 @@
+import os
 import tensorflow as tf
 from keras.datasets import cifar10
 from tensorflow import keras
 from tensorflow.python.keras import layers
-
 
 # Load and normalize dataset
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
@@ -32,3 +32,7 @@ model.fit(x_train, y_train, batch_size=4, epochs=10)
 
 # Evaluate the model
 model.evaluate(x_test, y_test)
+
+# Save the model to the documents folder
+save_path = os.path.expanduser("~/Documents/my_model.h5")
+model.save(save_path)
