@@ -38,4 +38,4 @@ To run the script, simply execute the script in a Python environment. The script
 
 ## License
 
-Planr Pro is licensed under the MIT License.
+ShepeFinder is licensed under the MIT License.
