@@ -1,4 +1,4 @@
-# AI Shape Detector
+# ShapeFinder
 
 This project is a Python script that uses Keras and TensorFlow to train a Convolutional Neural Network (CNN) on the CIFAR-10 dataset for shape detection in images. The trained model is then evaluated on the test set and saved to the project directory.
 
