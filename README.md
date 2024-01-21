@@ -38,4 +38,4 @@ To run the script, simply execute the script in a Python environment. The script
 
 ## License
 
-ShepeFinder is licensed under the MIT License.
+ShapeFinder is licensed under the MIT License.
